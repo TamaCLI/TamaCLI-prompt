@@ -32,7 +32,7 @@ Once Homebrew is set up, you can use it to install dependecies like this:
 brew install python jq
 ```
 
-see more about installing dependecies here: [manual-install.md.](guides/manual-install.md)
+see more about installing dependecies here: [manual-install.md.](manual-install.md)
 
 ---
 
@@ -45,7 +45,7 @@ brew --version
 ```
 
 If it returns a version number, you're good to go!
-and learn how to install dependecies manually [here!](guides/manual-install.md)
+and learn how to install dependecies manually [here!](manual-install.md)
 
 ---
 

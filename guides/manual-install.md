@@ -25,7 +25,7 @@ TamaCLI depends on the following shell tool:
 ### On macOS (with Homebrew)
 
 If you don’t have Homebrew, install it here:  
-[install-homebrew.md](guides/install-homebrew.md)
+[install-homebrew.md](install-homebrew.md)
 
 Then run:
 
