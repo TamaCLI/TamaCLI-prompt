@@ -36,7 +36,7 @@ It's like a Tamagotchi, but it bleps at you every time you run a command.
 1. **Clone the repo**
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/tamacli.git
+   git clone https://github.com/Cardsea/tamacli.git
    ```  
    ```bash 
    cd tamacli
