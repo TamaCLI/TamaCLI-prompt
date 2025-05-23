@@ -92,32 +92,25 @@ TamaCLI works on **macOS** and **Linux**! 🐧🍏
 - Python 3 (standard library only)
 - `jq` (for feeding)
 
-All required dependencies are listed in `requirements.cardsea`.
+All required dependencies are listed in `requirements.txt`.
 
 ### 🛠️ Install dependencies
 
 **macOS (Homebrew):**
 ```sh
-xargs -a requirements.cardsea brew install
+xargs -a requirements.txt brew install
 ```
 
 **Linux (apt):**
 ```sh
-xargs -a requirements.cardsea sudo apt-get install -y
+xargs -a requirements.txt sudo apt-get install -y
 ```
 
-If you use another OS or package manager, just install the tools listed in `requirements.cardsea` manually.
+If you use another OS or package manager, just install the tools listed in `requirements.txt` manually.
 
 ---
 
 ## 🐾 Future ideas
 
 - Multiple pets / names
-- ```play``` and ```sleep``` commands
-- Death + rebirth system 😳
-- Animations? Maybe? idk
-
----
-
-Made with blep by [Card](https://github.com/Cardsea) 💖
-
+- ```play``` and ```sleep```
