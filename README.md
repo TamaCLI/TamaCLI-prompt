@@ -9,7 +9,7 @@ It's like a Tamagotchi, but it bleps at you every time you run a command.
 
 ---
 
-## 💻 What it do:
+## 💻 What it does:
 
 - Lives in your terminal prompt (no extra steps to run)
 - Shows how your pet feels (happy, meh, or 💀)
@@ -97,20 +97,20 @@ All required dependencies are listed in `requirements.txt`.
 ### 🛠️ Install dependencies
 
 **macOS (Homebrew):**
-```sh
+```bash
 xargs -a requirements.txt brew install
 ```
 
 **Linux (apt):**
-```sh
+```bash
 xargs -a requirements.txt sudo apt-get install -y
 ```
 
-If you use another OS or package manager, just install the tools listed in `requirements.txt` manually.
+If you use another OS or package manager, just read the manual [manual-install.md](guides/manual-install.md) to install them manually.
 
 ---
 
 ## 🐾 Future ideas
 
-- Multiple pets / names
+- Multiple pets/names
 - ```play``` and ```sleep```
