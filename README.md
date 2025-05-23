@@ -15,33 +15,45 @@ It’s like a Tamagotchi, but it bleps at you every time you run a command.
 - Shows how your pet feels (happy, meh, or 💀)
 - Gets hungrier over time
 - You can feed it with a command:  
-  ``tamacli feed``
+  ```tamacli feed```
 
 ---
 
 ## 📸 Demo
 
-``cardiffemde@Cardiffs-MacBook-air 😸 ~ %``  
-``echo hello``  
-``hello``  
-``cardiffemde@Cardiffs-MacBook-air 😿 ~ %``  
-``tamacli feed``  
-``😋 You fed your Tama! Hunger is now 2.``  
-``cardiffemde@Cardiffs-MacBook-air 😸 ~ %``
+```cardiffemde@Cardiffs-MacBook-air 😸 ~ %```  
+```echo hello```  
+```hello```  
+```cardiffemde@Cardiffs-MacBook-air 😿 ~ %```  
+```tamacli feed```  
+```😋 You fed your Tama! Hunger is now 2.```  
+```cardiffemde@Cardiffs-MacBook-air 😸 ~ %```
 
 ---
 
 ## 🛠️ Setup Instructions
 
-1. **Download the repo**  
-   ``git clone https://github.com/YOUR_USERNAME/tamacli.git``  
-   ``cd tamacli``
+1. **Clone the repo**
 
-2. **Install TamaCLI**  
-   ``bash install.sh``
+   ```git clone https://github.com/YOUR_USERNAME/tamacli.git```  
+   ```cd tamacli```
 
-3. **Reload your shell**  
-   ``source ~/.zshrc``
+2. **Run the installer**
+
+   Just run this one command to set everything up:  
+   ```bash install.sh```
+
+   This will:  
+   – Create your pet’s save file  
+   – Add TamaCLI to your terminal prompt  
+   – Set up the ```tamacli``` command
+
+3. **Apply the changes**
+
+   Reload your terminal or run:  
+   ```source ~/.zshrc```
+
+   That’s it! Your pet should now be bleppin’ in your terminal like a champ 😸
 
 Now your prompt should show your pet — and it’ll get hungry the longer you ignore it 👀
 
@@ -51,14 +63,14 @@ Now your prompt should show your pet — and it’ll get hungry the longer you i
 
 | Command        | What it does            |
 |----------------|--------------------------|
-| ``tamacli feed`` | Lowers hunger            |
-| more soon...   | like ``play``, ``sleep``, ``stats``? 👀 |
+| ```tamacli feed``` | Lowers hunger            |
+| more soon...   | like ```play```, ```sleep```, ```stats```? 👀 |
 
 ---
 
 ## 💾 How it works
 
-- A Python script tracks your pet's hunger in ``~/.tamacli/state.json``
+- A Python script tracks your pet's hunger in ```~/.tamacli/state.json```
 - A shell function shows the pet's mood directly in your prompt
 - Every minute, hunger goes up
 - Feeding lowers hunger and makes Tama happy again
@@ -69,14 +81,14 @@ Now your prompt should show your pet — and it’ll get hungry the longer you i
 
 - macOS or Linux
 - Python 3
-- ``jq`` (for feeding)
+- ```jq``` (for feeding)
 
 ---
 
 ## 🐾 Future ideas
 
 - Multiple pets / names
-- ``play`` and ``sleep`` commands
+- ```play``` and ```sleep``` commands
 - Death + rebirth system 😳
 - Animations? Maybe? idk
 
