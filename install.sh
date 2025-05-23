@@ -1,5 +1,3 @@
-
-
 #!/bin/bash
 
 echo "🐣 Installing TamaCLI..."
@@ -39,8 +37,18 @@ function tamacli() {
     feed)
       ~/TamaCLI-prompt/feed.sh
       ;;
+    stats)
+      python3 ~/TamaCLI-prompt/pet_status.py --stats
+      ;;
+    name)
+      shift
+      python3 ~/TamaCLI-prompt/pet_status.py --set-name "$@"
+      ;;
+    doctor)
+      python3 ~/TamaCLI-prompt/pet_status.py --doctor
+      ;;
     *)
-      echo "TamaCLI commands: feed"
+      echo "TamaCLI commands: feed, stats, name <newname>, doctor"
       ;;
   esac
 }
