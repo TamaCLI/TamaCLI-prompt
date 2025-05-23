@@ -1,0 +1,6 @@
+# TamaCLI-prompt requirements.cardsea
+# Python dependencies (standard library only)
+# No external Python packages required
+
+# Shell dependencies
+jq 

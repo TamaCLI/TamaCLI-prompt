@@ -1,9 +1,9 @@
 # tamaCLI 🐣
 
 **tamaCLI** is a terminal-based pet that lives right inside your prompt!  
-It’s like a Tamagotchi, but it bleps at you every time you run a command.
+It's like a Tamagotchi, but it bleps at you every time you run a command.
 
-<img width="299" alt="Screenshot 2025-05-22 at 4 57 21 PM" src="https://github.com/user-attachments/assets/7ffcb00e-b07c-4cd3-ae61-dbedb2dc3e11" />
+<img width="299" alt="Screenshot 2025-05-22 at 4 57 21 PM" src="https://github.com/user-attachments/assets/7ffcb00e-b07c-4cd3-ae61-dbedb2dc3e11" />
 
 > Terminal got lonely? Not anymore 😼
 
@@ -35,27 +35,35 @@ It’s like a Tamagotchi, but it bleps at you every time you run a command.
 
 1. **Clone the repo**
 
-   ```git clone https://github.com/YOUR_USERNAME/tamacli.git```  
-   ```cd tamacli```
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/tamacli.git
+   ```  
+   ```bash 
+   cd tamacli
+   ```
 
 2. **Run the installer**
 
    Just run this one command to set everything up:  
-   ```bash install.sh```
+   ```bash
+   bash install.sh
+   ```
 
    This will:  
-   – Create your pet’s save file  
+   – Create your pet's save file  
    – Add TamaCLI to your terminal prompt  
    – Set up the ```tamacli``` command
 
 3. **Apply the changes**
 
    Reload your terminal or run:  
-   ```source ~/.zshrc```
+   ```bash
+   source ~/.zshrc
+   ```
 
-   That’s it! Your pet should now be bleppin’ in your terminal like a champ 😸
+   That's it! Your pet should now be bleppin' in your terminal like a champ 😸
 
-Now your prompt should show your pet — and it’ll get hungry the longer you ignore it 👀
+Now your prompt should show your pet — and it'll get hungry the longer you ignore it 👀
 
 ---
 
@@ -79,9 +87,26 @@ Now your prompt should show your pet — and it’ll get hungry the longer you i
 
 ## 📦 Requirements
 
-- macOS or Linux
-- Python 3
-- ```jq``` (for feeding)
+TamaCLI works on **macOS** and **Linux**! 🐧🍏
+
+- Python 3 (standard library only)
+- `jq` (for feeding)
+
+All required dependencies are listed in `requirements.cardsea`.
+
+### 🛠️ Install dependencies
+
+**macOS (Homebrew):**
+```sh
+xargs -a requirements.cardsea brew install
+```
+
+**Linux (apt):**
+```sh
+xargs -a requirements.cardsea sudo apt-get install -y
+```
+
+If you use another OS or package manager, just install the tools listed in `requirements.cardsea` manually.
 
 ---
 
