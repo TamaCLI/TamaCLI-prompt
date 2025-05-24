@@ -1,3 +1,5 @@
+Terminal got lonely? Not anymore! 😼
+
 # TamaCLI 🐣
 
 **TamaCLI** is a terminal-based virtual pet that lives right inside your prompt!  
@@ -5,7 +7,6 @@ It's like a Tamagotchi, but it bleps at you every time you run a command.
 
 ![TamaCLI Demo](assets/demo.png)
 
-> Terminal got lonely? Not anymore! 😼
 
 ## 💻 Features
 
@@ -14,10 +15,6 @@ It's like a Tamagotchi, but it bleps at you every time you run a command.
 - Gets hungrier over time, just like a real pet
 - Simple commands to feed, heal, and interact with your pet
 - Works seamlessly with your existing terminal workflow
-
-## 📸 Demo
-
-![TamaCLI Demo](assets/demo.png)
 
 ## 🚀 Installation
 
