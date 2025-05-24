@@ -104,3 +104,4 @@ Your pet has several stats that affect its mood and well-being:
 ## Disclaimer
 
 TamaCLI is an independent project that is not affiliated with, endorsed by, or related to Tamagotchi, Bandai Namco Entertainment, or any of their trademarks or products. This project is purely for fun. Thanks for visiting!
+# TamaCLI.github.io
