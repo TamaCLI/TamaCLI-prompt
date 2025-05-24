@@ -108,8 +108,11 @@ xargs -a requirements.txt brew install
 xargs -a requirements.txt sudo apt-get install -y
 ```
 
-If you use another OS or package manager, just read the manual [manual-install.md](guides/manual-install.md) to install them manually. or dont. im not your dad
+If you use another OS or package manager, just read the manual [manual-install.md](guides/manual-install.md) to install them manually. Or don't. I'm not your dad
 ## 🐾 Future ideas
 
 - Multiple pets/names
 - ```play``` and ```sleep```
+
+## Disclaimer
+TamaCLI is an independent project that is not affiliated with, endorsed by, or related to Tamagotchi, Bandai Namco Entertainment, or any of their trademarks or products. This project is purely for fun. Thanks for visiting!
