@@ -7,109 +7,85 @@ It's like a Tamagotchi, but it bleps at you every time you run a command.
 
 > Terminal got lonely? Not anymore 😼
 
-[Installation](#installation)
-
-## 💻 What it does:
+## 💻 Features
 
 - Lives in your terminal prompt (no extra steps to run)
 - Shows how your pet feels (happy, meh, or 💀)
 - Gets hungrier over time
-- You can feed it with a command:  
-  ```tamacli feed```
+- Feed it with simple commands!
 
 ## 📸 Demo
 
-```cardiffemde@Cardiffs-MacBook-air 😸 ~ %```  
-```echo hello```  
-```hello```  
-```cardiffemde@Cardiffs-MacBook-air 😿 ~ %```  
-```tamacli feed```  
-```😋 You fed your Tama! Hunger is now 2.```  
-```cardiffemde@Cardiffs-MacBook-air 😸 ~ %```
+```
+user@computer 😾 hungry ~ % tamacli feed
+😋 You fed your Tama! Hunger is now 6.
+user@computer 😿 meh ~ % tamacli feed
+😋 You fed your Tama! Hunger is now 9.
+user@computer 😸 happy ~ %
+```
 
-## 🛠️ Setup Instructions
+## 🚀 Installation
 
-   ## 🚀 Quick Installation
-
-   Just copy and paste these commands into your terminal:
-
-   ```bash
-   git clone https://github.com/TamaCLI/TamaCLI-prompt.git
-   cd TamaCLI-prompt
-   bash install.sh
-   source ~/.zshrc
-   ```
-
-## step by stp instalation
-1. **Clone the repo**
-
-   ```bash
-   git clone https://github.com/Cardsea/tamacli.git
-   ```  
-   ```bash 
-   cd tamacli
-   ```
-
-2. **Run the installer**
-
-   Just run this one command to set everything up:  
-   ```bash
-   bash install.sh
-   ```
-
-   This will:  
-   – Create your pet's save file  
-   – Add TamaCLI to your terminal prompt  
-   – Set up the ```tamacli``` command
-
-3. **Apply the changes**
-
-   Reload your terminal or run:  
-   ```bash
-   source ~/.zshrc
-   ```
-
-   That's it! Your pet should now be bleppin' in your terminal like a champ 😸
-
-Now your prompt should show your pet — and it'll get hungry the longer you ignore it 👀
-
-## 🍽️ Commands
-
-| Command        | What it does            |
-|----------------|--------------------------|
-| ```tamacli feed``` | Lowers hunger            |
-| more soon...   | like ```play```, ```sleep```, ```stats```? 👀 |
-
-## 💾 How it works
-
-- A Python script tracks your pet's hunger in ```~/.tamacli/state.json```
-- A shell function shows the pet's mood directly in your prompt
-- Every minute, hunger goes up
-- Feeding lowers hunger and makes Tama happy again
-
-## 📦 Requirements
+### Prerequisites
 
 TamaCLI works on **macOS** and **Linux**! 🐧🍏
 
+You'll need:
 - Python 3 (standard library only)
-- `jq` (for feeding)
+- `jq` (for JSON handling)
 
-All required dependencies are listed in `requirements.txt`.
+### Install Dependencies
 
-### 🛠️ Install dependencies
-
-**macOS (Homebrew):**
+**On macOS:**
 ```bash
-xargs -a requirements.txt brew install
+brew install jq python3
 ```
 
-**Linux (apt):**
+**On Linux (Debian/Ubuntu):**
 ```bash
-xargs -a requirements.txt sudo apt-get install -y
+sudo apt-get install jq python3
 ```
 
-If you use another OS or package manager, just read the manual [manual-install.md](guides/manual-install.md) to install them manually. or dont. im not your dad
-## 🐾 Future ideas
+Need help? Check out our guides:
+- [How to Install Homebrew](guides/install-homebrew.md) (for macOS users)
+- [Manual Installation Guide](guides/manual-install.md) (for other systems)
+
+### Install tamaCLI
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/TamaCLI/TamaCLI-prompt.git
+   cd TamaCLI-prompt
+   ```
+
+2. Run the installer:
+   ```bash
+   bash install.sh
+   ```
+
+3. Apply changes:
+   ```bash
+   source ~/.zshrc
+   ```
+
+That's it! Your pet should now be bleppin' in your terminal like a champ 😸
+
+## 🍽️ Commands
+
+| Command | What it does |
+|---------|-------------|
+| `tamacli feed` | Feed your pet when hungry |
+| More soon... | Like `play`, `sleep`, `stats`? 👀 |
+
+## 💾 How it Works
+
+- A Python script tracks your pet's hunger in `~/.tamacli/state.json`
+- A shell function shows the pet's mood directly in your prompt
+- Hunger increases over time
+- Feeding makes your pet happy again!
+
+## 🐾 Future Ideas
 
 - Multiple pets/names
-- ```play``` and ```sleep```
+- `play` and `sleep` commands
+- More interactions and stats
