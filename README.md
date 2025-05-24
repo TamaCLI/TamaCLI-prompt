@@ -1,28 +1,23 @@
-# tamaCLI 🐣
+# TamaCLI 🐣
 
-**tamaCLI** is a terminal-based pet that lives right inside your prompt!  
-It's like a Tamagotchi, but it bleps at you every time you run a command.
+**TamaCLI** is a terminal-based virtual pet that lives right inside your prompt!  
+It's like a Tamagotchi, but it bleps at you every time you run a command. 
 
-<img width="299" alt="Screenshot 2025-05-22 at 4 57 21 PM" src="https://github.com/user-attachments/assets/7ffcb00e-b07c-4cd3-ae61-dbedb2dc3e11" />
+![TamaCLI Demo](assets/demo.png)
 
-> Terminal got lonely? Not anymore 😼
+> Terminal got lonely? Not anymore! 😼
 
 ## 💻 Features
 
-- Lives in your terminal prompt (no extra steps to run)
-- Shows how your pet feels (happy, meh, or 💀)
-- Gets hungrier over time
-- Feed it with simple commands!
+- Lives in your terminal prompt - no extra steps needed
+- Shows your pet's mood in real-time (happy, meh, hungry, or worse!)
+- Gets hungrier over time, just like a real pet
+- Simple commands to feed, heal, and interact with your pet
+- Works seamlessly with your existing terminal workflow
 
 ## 📸 Demo
 
-```
-user@computer 😾 hungry ~ % tamacli feed
-😋 You fed your Tama! Hunger is now 6.
-user@computer 😿 meh ~ % tamacli feed
-😋 You fed your Tama! Hunger is now 9.
-user@computer 😸 happy ~ %
-```
+![TamaCLI Demo](assets/demo.png)
 
 ## 🚀 Installation
 
@@ -31,8 +26,8 @@ user@computer 😸 happy ~ %
 TamaCLI works on **macOS** and **Linux**! 🐧🍏
 
 You'll need:
-- Python 3 (standard library only)
-- `jq` (for JSON handling)
+- Python 3 (standard library only, no extra packages needed)
+- `jq` (for handling pet data)
 
 ### Install Dependencies
 
@@ -50,7 +45,7 @@ Need help? Check out our guides:
 - [How to Install Homebrew](guides/install-homebrew.md) (for macOS users)
 - [Manual Installation Guide](guides/manual-install.md) (for other systems)
 
-### Install tamaCLI
+### Install TamaCLI
 
 1. Clone the repository:
    ```bash
@@ -68,27 +63,47 @@ Need help? Check out our guides:
    source ~/.zshrc
    ```
 
-That's it! Your pet should now be bleppin' in your terminal like a champ 😸
+That's it! Your new virtual pet should now be happily bleppin' in your terminal! 😸
 
-## 🍽️ Commands
+## 🎮 Commands
 
 | Command | What it does |
 |---------|-------------|
-| `tamacli feed` | Feed your pet when hungry |
-| More soon... | Like `play`, `sleep`, `stats`? 👀 |
+| `tamacli feed` | Feed your pet (+3 hunger, max 10) |
+| `tamacli stats` | Show detailed stats about your pet |
+| `tamacli doctor` | Heal your pet (+3 health, max 10) |
+| `tamacli name <new name>` | Change your pet's name |
+
+### Pet Stats Explained
+
+Your pet has several stats that affect its mood and well-being:
+
+- **Hunger**: 0-10 (10 is full, 0 is starving)
+- **Health**: 0-10 (10 is perfect health)
+- **Mood**: Changes based on hunger and health levels
+  - 😸 happy (hunger ≥ 8)
+  - 😿 meh (hunger 4-7)
+  - 😾 hungry (hunger < 4)
+  - 💀 dead (health ≤ 2)
 
 ## 💾 How it Works
 
-- A Python script tracks your pet's hunger in `~/.tamacli/state.json`
-- A shell function shows the pet's mood directly in your prompt
-- Hunger increases over time
-- Feeding makes your pet happy again!
+- A Python script tracks your pet's stats in `~/.tamacli/state.json`
+- A shell function displays your pet's mood right in your prompt
+- Hunger increases over time (1 point per minute)
+- Health is affected by hunger:
+  - Low hunger (≤ 3) decreases health
+  - High hunger (≥ 8) slowly restores health
+- Regular feeding keeps your pet happy and healthy!
 
 ## 🐾 Future Ideas
 
 - Multiple pets/names
 - `play` and `sleep` commands
 - More interactions and stats
+- Downloadable themes with different emojis and moods 🎨
+- Settings menu to customize colors and emoji sets ⚙️
 
 ## Disclaimer
+
 TamaCLI is an independent project that is not affiliated with, endorsed by, or related to Tamagotchi, Bandai Namco Entertainment, or any of their trademarks or products. This project is purely for fun. Thanks for visiting!
