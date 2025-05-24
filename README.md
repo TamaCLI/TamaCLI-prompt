@@ -89,3 +89,6 @@ That's it! Your pet should now be bleppin' in your terminal like a champ 😸
 - Multiple pets/names
 - `play` and `sleep` commands
 - More interactions and stats
+
+## Disclaimer
+TamaCLI is an independent project that is not affiliated with, endorsed by, or related to Tamagotchi, Bandai Namco Entertainment, or any of their trademarks or products. This project is purely for fun. Thanks for visiting!
