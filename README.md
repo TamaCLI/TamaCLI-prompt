@@ -7,7 +7,7 @@ It's like a Tamagotchi, but it bleps at you every time you run a command.
 
 > Terminal got lonely? Not anymore 😼
 
----
+[Installation](#installation)
 
 ## 💻 What it does:
 
@@ -16,8 +16,6 @@ It's like a Tamagotchi, but it bleps at you every time you run a command.
 - Gets hungrier over time
 - You can feed it with a command:  
   ```tamacli feed```
-
----
 
 ## 📸 Demo
 
@@ -29,10 +27,20 @@ It's like a Tamagotchi, but it bleps at you every time you run a command.
 ```😋 You fed your Tama! Hunger is now 2.```  
 ```cardiffemde@Cardiffs-MacBook-air 😸 ~ %```
 
----
-
 ## 🛠️ Setup Instructions
 
+   ## 🚀 Quick Installation
+
+   Just copy and paste these commands into your terminal:
+
+   ```bash
+   git clone https://github.com/TamaCLI/TamaCLI-prompt.git
+   cd TamaCLI-prompt
+   bash install.sh
+   source ~/.zshrc
+   ```
+
+## step by stp instalation
 1. **Clone the repo**
 
    ```bash
@@ -65,8 +73,6 @@ It's like a Tamagotchi, but it bleps at you every time you run a command.
 
 Now your prompt should show your pet — and it'll get hungry the longer you ignore it 👀
 
----
-
 ## 🍽️ Commands
 
 | Command        | What it does            |
@@ -74,16 +80,12 @@ Now your prompt should show your pet — and it'll get hungry the longer you ign
 | ```tamacli feed``` | Lowers hunger            |
 | more soon...   | like ```play```, ```sleep```, ```stats```? 👀 |
 
----
-
 ## 💾 How it works
 
 - A Python script tracks your pet's hunger in ```~/.tamacli/state.json```
 - A shell function shows the pet's mood directly in your prompt
 - Every minute, hunger goes up
 - Feeding lowers hunger and makes Tama happy again
-
----
 
 ## 📦 Requirements
 
@@ -106,10 +108,7 @@ xargs -a requirements.txt brew install
 xargs -a requirements.txt sudo apt-get install -y
 ```
 
-If you use another OS or package manager, just read the manual [manual-install.md](guides/manual-install.md) to install them manually.
-
----
-
+If you use another OS or package manager, just read the manual [manual-install.md](guides/manual-install.md) to install them manually. or dont. im not your dad
 ## 🐾 Future ideas
 
 - Multiple pets/names
