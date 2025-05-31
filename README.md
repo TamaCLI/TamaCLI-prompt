@@ -16,7 +16,7 @@ It's like a Tamagotchi, but it bleps at you every time you run a command.
 - Simple commands to feed, heal, and interact with your pet
 - Works seamlessly with your existing terminal workflow
 
-## 🚀 Installation
+## [!download](assets/downloadicon.png) Installation
 
 ### Prerequisites
 
